@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+:root {
+
+	&[data-theme="light"] {
+		--primary-clr: #ffffff;
+		--secondary-clr: #18171b;
+		--accent-clr: #600c81;
+	}
+
+	&[data-theme="dark"] {
+		--primary-clr: #000000;
+		--secondary-clr: #e7e4f0;
+		--accent-clr: #600c81;
+	}
+
+	overflow: hidden;
+	background-color: var(--primary-clr);
+	color: var(--secondary-clr);
+}
+
+#root {
+	height: var(--vh, 100vh);
+	width: var(--vw, 100vw);
+}
