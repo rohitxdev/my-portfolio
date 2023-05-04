@@ -1,11 +1,13 @@
-import { ReactComponent as ReactLogo } from '@assets/icons/react.svg';
+import { AboutMe, ContactMe, MyProjects } from '@components';
 
 import styles from './home.module.scss';
 
 export const HomePage = () => {
 	return (
 		<div className={styles.homePage}>
-			<ReactLogo height={200} width={200} className={styles.reactLogo} />
+			<AboutMe />
+			<MyProjects />
+			<ContactMe />
 		</div>
 	);
 };

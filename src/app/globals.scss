@@ -10,21 +10,33 @@
 	&[data-theme="light"] {
 		--primary-clr: #ffffff;
 		--secondary-clr: #18171b;
-		--accent-clr: #600c81;
 	}
 
 	&[data-theme="dark"] {
-		--primary-clr: #000000;
-		--secondary-clr: #e7e4f0;
-		--accent-clr: #600c81;
+		--primary-clr: #18171b;
+		--secondary-clr: #ffffff;
 	}
 
+
 	overflow: hidden;
-	background-color: var(--primary-clr);
-	color: var(--secondary-clr);
 }
 
 #root {
 	height: var(--vh, 100vh);
 	width: var(--vw, 100vw);
+	color: var(--secondary-clr);
+	background-color: var(--primary-clr);
+	font-family: 'Mona Sans';
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'Mona Sans';
+	src: url('../assets/fonts/mona-sans.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../assets/fonts/inter-variable-font.woff2') format('woff2');
 }

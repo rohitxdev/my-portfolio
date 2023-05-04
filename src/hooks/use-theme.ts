@@ -13,18 +13,18 @@ export const useTheme = () => {
 		if (theme === 'dark' || theme === 'light') {
 			return appDispatch({ type: 'SET_THEME', payload: theme });
 		}
-		if (
-			window.matchMedia &&
-			window.matchMedia('(prefers-color-scheme: dark)').matches
-		) {
-			return appDispatch({ type: 'SET_THEME', payload: 'dark' });
-		} else {
-			return appDispatch({ type: 'SET_THEME', payload: 'light' });
-		}
+		const prefersDarkTheme = Boolean(
+			window?.matchMedia('(prefers-color-scheme: dark)').matches,
+		);
+		return appDispatch({
+			type: 'SET_THEME',
+			payload: prefersDarkTheme ? 'dark' : 'light',
+		});
 	};
 
 	useEffect(() => {
 		document.documentElement.setAttribute('data-theme', theme);
+		localStorage.setItem('theme', theme);
 	}, [theme]);
 
 	useEffect(() => {

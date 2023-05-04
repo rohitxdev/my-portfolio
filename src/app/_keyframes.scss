@@ -1,9 +1,9 @@
-@keyframes rotate {
+@keyframes fill-width {
     from {
-        transform: rotate(0deg) scale(0.25);
+        width: 0;
     }
 
     to {
-        transform: rotate(360deg) scale(1);
+        width: 100%;
     }
 }

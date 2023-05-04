@@ -1,7 +1,71 @@
+@use '../../app/keyframes' as *;
+
 .nav-bar {
     display: grid;
     height: 100%;
     width: 100%;
     place-content: center;
-    background-color: var(--accent-clr);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 3rem 0;
+
+    ul:first-child {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+        li {
+            color: white;
+            position: relative;
+            padding: 0.25rem 0.75rem;
+            overflow: hidden;
+            border-radius: 0.25rem;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 100%;
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                mix-blend-mode: exclusion;
+                pointer-events: none;
+                transition: all 0.2s linear;
+            }
+
+            &:hover {
+
+
+                &::before {
+                    width: 100%;
+                }
+
+
+            }
+        }
+
+
+
+    }
 }
+
+section {
+
+    background-color: grey;
+    border-radius: 2rem;
+    height: 400px;
+    aspect-ratio: 1 / 1;
+}
+
+#about-me {}
+
+#my-projects {}
+
+#contact-me {}

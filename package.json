@@ -10,8 +10,7 @@
 		"dev": "vite",
 		"build": "tsc && vite build --mode development",
 		"build:prod": "tsc && vite build --mode production",
-		"start": "vite preview --mode development",
-		"start:prod": "vite preview --mode production",
+		"start": "vite preview",
 		"lint": "eslint ./ --fix",
 		"commit": "git add . && git cz",
 		"prepare": "husky install"

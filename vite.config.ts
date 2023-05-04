@@ -8,7 +8,9 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig(({ mode }) => {
 	const ENV_VARS = loadEnv(mode, './');
-	console.log('\n\x1b[1m\x1b[37m<<< Environment variables >>>\x1b[0m');
+	console.log(
+		`\n\x1b[1m\x1b[37m<<< Environment variables in \x1b[35m${mode.toLocaleUpperCase()}\x1b[37m >>>\x1b[0m`,
+	);
 	console.table(
 		Object.entries(ENV_VARS).map(([key, value]) => ({
 			KEY: key,
