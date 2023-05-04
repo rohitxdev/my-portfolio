@@ -1,1 +1,77 @@
-.my-projects {}
+.my-projects {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    padding: 2rem;
+}
+
+.projects {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-card {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    width: 340px;
+    padding: 1rem;
+    position: relative;
+    transition: all 100ms linear;
+
+    &[data-url] {
+        cursor: pointer;
+    }
+
+    .project-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        text-decoration: none;
+        color: inherit;
+        opacity: 0;
+        pointer-events: none;
+        background-color: var(--color-neutral);
+
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+
+    &:hover {
+        .project-link {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        transform: scale(1.02);
+    }
+
+    img {
+        border-radius: 1rem;
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        object-position: center;
+
+
+    }
+
+
+
+}
+
+.project-details {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+
+    p {
+        font-weight: 400;
+        max-width: 50ch;
+    }
+}

@@ -5,10 +5,15 @@
     width: 100%;
     display: grid;
     place-content: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 section {
     display: grid;
     place-content: center;
+    background-color: var(--color-neutral);
+    border-radius: 2rem;
+    width: calc(var(--vw) - 4rem);
+    font-weight: 600;
+    font-size: 1.25rem;
 }

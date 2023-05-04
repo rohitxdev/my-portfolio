@@ -4,17 +4,18 @@
 	box-sizing: border-box;
 }
 
-
 :root {
+	--color-accent: #028af2;
+	--color-neutral: #2e2e2e;
 
 	&[data-theme="light"] {
-		--primary-clr: #ffffff;
-		--secondary-clr: #18171b;
+		--color-primary: #ffffff;
+		--color-secondary: #18171b;
 	}
 
 	&[data-theme="dark"] {
-		--primary-clr: #18171b;
-		--secondary-clr: #ffffff;
+		--color-primary: #18171b;
+		--color-secondary: #ffffff;
 	}
 
 
@@ -24,10 +25,10 @@
 #root {
 	height: var(--vh, 100vh);
 	width: var(--vw, 100vw);
-	color: var(--secondary-clr);
-	background-color: var(--primary-clr);
+	color: var(--color-secondary);
+	background-color: var(--color-primary);
 	font-family: 'Mona Sans';
-	overflow: auto;
+	overflow: hidden auto;
 	scroll-behavior: smooth;
 }
 
