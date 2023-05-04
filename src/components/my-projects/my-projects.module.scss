@@ -7,18 +7,20 @@
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
 .project-card {
+    --width: clamp(200px, calc(var(--vw) - 6rem), 40ch);
     display: grid;
     justify-items: center;
-    gap: 2rem;
+    gap: 1rem;
     border: 1px solid grey;
     border-radius: 1rem;
-    width: 340px;
-    padding: 1rem;
+    width: var(--width);
     position: relative;
+    overflow: hidden;
     transition: all 100ms linear;
 
     &[data-url] {
@@ -53,11 +55,9 @@
 
     img {
         border-radius: 1rem;
-        height: 200px;
-        width: 300px;
+        aspect-ratio: 2 / 3;
         object-fit: cover;
         object-position: center;
-
 
     }
 
