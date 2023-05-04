@@ -2,7 +2,7 @@ import './globals.scss';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 import { Layout } from '@components';
-import { AppContextProvider, AuthContextProvider } from '@contexts';
+import { AppContextProvider } from '@contexts';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -14,13 +14,11 @@ registerServiceWorker();
 const App = () => {
 	return (
 		<React.StrictMode>
-			<AuthContextProvider>
-				<AppContextProvider>
-					<Layout>
-						<Router />
-					</Layout>
-				</AppContextProvider>
-			</AuthContextProvider>
+			<AppContextProvider>
+				<Layout>
+					<Router />
+				</Layout>
+			</AppContextProvider>
 		</React.StrictMode>
 	);
 };
