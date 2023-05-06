@@ -5,6 +5,7 @@
     justify-items: center;
 
     form {
+        animation: rotate 5s infinite forwards alternate;
         display: grid;
         justify-content: center;
         gap: 2rem;
