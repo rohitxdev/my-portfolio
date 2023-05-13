@@ -1,4 +1,4 @@
-@use '../../app/keyframes' as *;
+@use '../../app/keyframes';
 
 .home-page {
     height: 100%;
@@ -11,7 +11,7 @@
 section {
     display: grid;
     place-content: center;
-    background-color: var(--color-neutral);
+    // background-color: hsl(247, 27%, 8%);
     border-radius: 2rem;
     width: calc(var(--vw) - 4rem);
     font-weight: 600;

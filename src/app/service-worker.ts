@@ -1,4 +1,4 @@
-import { ENV_VARS } from '@config';
+import { ENV_VARS } from '@constants';
 
 export const registerServiceWorker = () => {
 	if (ENV_VARS.IS_PWA_ENABLED) {

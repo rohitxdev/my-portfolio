@@ -1,46 +1,78 @@
+@use '../../app/keyframes';
+
 .contact-me {
     display: grid;
-    padding: 1.5rem;
     gap: 2rem;
     justify-items: center;
 
     form {
-        animation: rotate 5s infinite forwards alternate;
         display: grid;
         justify-content: center;
         gap: 2rem;
         grid-auto-columns: minmax(auto, 45ch);
 
-        label {
+        div {
             display: grid;
             gap: 1rem;
+            color: var(--color-white);
+
+            &:first-of-type {
+                gap: 2rem;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
         }
+
+
 
         input,
         textarea {
-            border-radius: 1rem;
+            resize: none;
+            border-radius: 0.75rem;
             padding: 1rem;
-            border: 2px solid white;
+            border: 2px solid var(--color-primary);
             outline: none;
             width: 100%;
             background-color: var(--color-neutral);
-            color: var(--color-secondary);
+            color: var(--color-primary);
             font-family: inherit;
+            transition: all 0.2s linear;
+            font-weight: 600;
+            font-size: 1em;
 
-            &::placeholder {
-                font-weight: 600;
+            &:focus-within {
+                box-shadow: 0 0 2px 2px var(--color-primary);
             }
         }
 
         button[type="submit"] {
-            background-color: var(--color-secondary);
-            color: var(--color-primary);
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
             padding: 1rem 2rem;
             font-family: inherit;
             font-weight: 700;
             font-size: 1.25rem;
             border-radius: 0.75rem;
             cursor: pointer;
+            border: none;
+        }
+    }
+}
+
+.social-media-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+
+    --size: 2rem;
+
+    svg {
+        height: var(--size);
+        width: var(--size);
+        color: var(--color-white);
+        fill: var(--color-white);
+
+        &:active {
+            transform: scale(0.96);
         }
     }
 }

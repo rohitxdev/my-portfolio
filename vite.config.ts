@@ -45,7 +45,7 @@ export default defineConfig(({ mode }) => {
 			alias: {
 				'@assets': resolve(__dirname, './src/assets'),
 				'@components': resolve(__dirname, './src/components'),
-				'@config': resolve(__dirname, './src/config'),
+				'@constants': resolve(__dirname, './src/constants'),
 				'@contexts': resolve(__dirname, './src/contexts'),
 				'@hooks': resolve(__dirname, './src/hooks'),
 				'@pages': resolve(__dirname, './src/pages'),
@@ -54,5 +54,8 @@ export default defineConfig(({ mode }) => {
 			},
 		},
 		server: { port: 3000, host: true },
+		build: {
+			assetsDir: './',
+		},
 	};
 });

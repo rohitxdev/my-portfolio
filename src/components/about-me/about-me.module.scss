@@ -1,6 +1,31 @@
+@use '../../app/keyframes';
+
 .about-me {
     display: grid;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 2rem;
     justify-items: center;
+    color: var(--color-white);
+
+    span {
+        font-weight: 700;
+        font-style: italic;
+        transition: all 0.2s linear;
+        animation: drop 0.2s linear 1 forwards;
+        display: inline-block;
+        letter-spacing: 0.25ch;
+        overflow: hidden;
+        opacity: 0;
+        // &:hover {
+        //     // text-shadow: 0 0 1rem red;
+        //     display: inline-block;
+        //     transform: scale(0.9);
+        //     color: var(--color-primary);
+
+        // }
+    }
+
+    p {
+        line-height: 1.75;
+    }
 }

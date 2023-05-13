@@ -7,3 +7,37 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes phase {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-400%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

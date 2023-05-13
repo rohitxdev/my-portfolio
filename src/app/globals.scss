@@ -6,40 +6,46 @@
 	box-sizing: border-box;
 }
 
-:root {
-	--color-accent: #028af2;
-	--color-neutral: #2e2e2e;
-
-	&[data-theme="light"] {
-		--color-primary: #ffffff;
-		--color-secondary: #18171b;
-	}
-
-	&[data-theme="dark"] {
-		--color-primary: #18171b;
-		--color-secondary: #ffffff;
-	}
-
-
+body {
 	overflow: hidden;
 }
 
 #root {
+	--color-primary: #9768f6;
+	--color-secondary: #07060f;
+	--color-tertiary: #5a40a1;
+	--color-neutral: #121216;
+	--color-black: #000000;
+	--color-white: #ffffff;
+
 	height: var(--vh, 100vh);
 	width: var(--vw, 100vw);
-	color: var(--color-secondary);
-	background-color: var(--color-primary);
+	color: var(--color-primary);
+	background-color: var(--color-secondary);
 	font-family: 'Mona Sans';
-	overflow: hidden auto;
+	overflow: auto;
 	scroll-behavior: smooth;
+
+	-webkit-tap-highlight-color: transparent;
+
+	&::-webkit-scrollbar {
+		background-color: var(--color-neutral);
+		width: 0.25rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--color-tertiary);
+		border-radius: 1.5rem;
+	}
+}
+
+.toast-container {
+	font-family: 'Mona Sans';
+	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Mona Sans';
-	src: url('../assets/fonts/mona-sans.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Inter';
-	src: url('../assets/fonts/inter-variable-font.woff2') format('woff2');
+	src: url('/fonts/mona-sans.woff2') format('woff2');
+	font-display: swap;
 }
