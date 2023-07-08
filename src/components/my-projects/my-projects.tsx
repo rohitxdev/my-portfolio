@@ -53,7 +53,7 @@ const projects: ProjectCardProps[] = [
 	{
 		projectTitle: 'Relay',
 		projectDescription:
-			'A free video conferencing app with screensharing feature that supports upto 20 people in a single call',
+			'A free video conferencing app with screensharing feature that supports upto 20 people in a single call.',
 		projectUrl: 'https://relay.rohit.works',
 		technologiesUsed: [
 			'React.js',

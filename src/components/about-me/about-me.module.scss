@@ -35,3 +35,12 @@
         line-height: 1.75;
     }
 }
+
+@media screen and (max-width:400px) {
+    .about-me {
+        img {
+            height: 125px;
+            width: 125px;
+        }
+    }
+}
