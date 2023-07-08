@@ -47,7 +47,7 @@ const projects: ProjectCardProps[] = [
 		],
 		projectThumbnail: 'animeow-1.png',
 		projectUrl: 'https://animeow.rohit.works',
-		videoUrl: 'animeow.mp4',
+		videoUrl: 'animeow-compressed.mp4',
 		date: '06/23 - current',
 	},
 	{
@@ -63,7 +63,7 @@ const projects: ProjectCardProps[] = [
 			'JWT',
 		],
 		projectThumbnail: 'relay-2.png',
-		videoUrl: 'relay.mp4',
+		videoUrl: 'relay-compressed.mp4',
 		date: '09/22 - 12/22',
 	},
 	{
@@ -72,7 +72,7 @@ const projects: ProjectCardProps[] = [
 		projectUrl: 'https://bitsy.rohit.works',
 		projectThumbnail: 'bitsy-1.png',
 		technologiesUsed: ['React.js', 'Express.js', 'PostgreSQL', 'TypeScript'],
-		videoUrl: 'bitsy.mp4',
+		videoUrl: 'bitsy-compressed.mp4',
 		date: '01/23 - 01/23',
 	},
 	{

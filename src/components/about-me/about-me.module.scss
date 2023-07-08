@@ -6,6 +6,13 @@
     justify-items: center;
     color: var(--color-white);
 
+    img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
     span {
         font-weight: 700;
         font-style: italic;
