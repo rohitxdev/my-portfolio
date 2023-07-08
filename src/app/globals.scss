@@ -11,7 +11,7 @@ body {
 }
 
 #root {
-	--color-primary: #9768f6;
+	--color-primary: #fe8040;
 	--color-secondary: #07060f;
 	--color-tertiary: #5a40a1;
 	--color-neutral: #121216;
@@ -34,14 +34,18 @@ body {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: var(--color-tertiary);
+		background-color: var(--color-primary);
 		border-radius: 1.5rem;
 	}
+
 }
 
-.toast-container {
+.toast {
 	font-family: 'Mona Sans';
 	font-weight: 600;
+	color: var(--color-white) !important;
+	background-color: var(--color-neutral) !important;
+	border-radius: 0.5rem !important;
 }
 
 @font-face {

@@ -40,7 +40,7 @@ export const ContactMe = () => {
 				},
 			}),
 		}).then(() => {
-			toast('Sent message successfully');
+			toast('Sent message successfully!');
 		});
 	};
 
@@ -54,38 +54,43 @@ export const ContactMe = () => {
 			<form onSubmit={sendQuery}>
 				<div>
 					<div>
-						<label htmlFor={`${id}-name`}>Name*</label>
+						{/* <label htmlFor={`${id}-name`}>Name*</label> */}
 						<input
 							id={`${id}-name`}
 							type="text"
 							name="name"
-							placeholder="Eg. John"
+							placeholder="Name"
 							required={true}
 						/>
 					</div>
 					<div>
-						<label htmlFor={`${id}-email`}>Email*</label>
+						{/* <label htmlFor={`${id}-email`}>Email*</label> */}
 						<input
 							id={`${id}-email`}
 							type="email"
 							name="email"
-							placeholder="Eg. johnsmith@gmail.com"
+							placeholder="Email"
 							required
 						/>
 					</div>
 				</div>
 				<div>
-					<label htmlFor={`${id}-subject`}>Subject</label>
-					<input id={`${id}-subject`} type="text" name="subject" />
+					{/* <label htmlFor={`${id}-subject`}>Subject</label> */}
+					<input
+						id={`${id}-subject`}
+						type="text"
+						name="subject"
+						placeholder="Subject"
+					/>
 				</div>
 				<div>
-					<label htmlFor={`${id}-message`}>Message*</label>
+					{/* <label htmlFor={`${id}-message`}>Message*</label> */}
 					<textarea
 						id={`${id}-message`}
 						name="message"
 						cols={30}
 						rows={10}
-						placeholder="What do you want to say?"
+						placeholder="Message"
 						required
 					></textarea>
 				</div>

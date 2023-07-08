@@ -22,7 +22,7 @@ const App = () => {
 					<ToastContainer
 						pauseOnHover={false}
 						pauseOnFocusLoss={false}
-						className="toast-container"
+						toastClassName="toast"
 					/>
 				</Layout>
 			</AppContextProvider>

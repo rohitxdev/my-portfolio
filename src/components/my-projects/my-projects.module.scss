@@ -9,6 +9,7 @@
 .projects {
     display: grid;
     gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
 .project-card {
@@ -20,19 +21,20 @@
     background-color: hsl(247, 27%, 8%);
     padding: 0.5rem;
     gap: 1rem;
-    width: fit-content;
+    width: 100%;
     margin: auto;
     // border: 1px solid grey;
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
     transition: all 100ms linear, opacity 500ms linear;
-    animation: appear 5s ease 1 forwards;
+    // animation: appear 5s ease 1 forwards;
     opacity: 1;
 
     &:hover {
-        transform: translate(calc(var(--delta) * -1), calc(var(--delta) * -1));
-        box-shadow: var(--delta) var(--delta) 0 hsl(247, 27%, 14%);
+        // transform: translate(calc(var(--delta) * -1), calc(var(--delta) * -1));
+        // box-shadow: var(--delta) var(--delta) 0 hsl(247, 27%, 14%);
+        transform: scale(1.02);
     }
 
     @media screen and (max-width:700px) {
@@ -53,13 +55,19 @@
         cursor: pointer;
     }
 
-    img {
+    a {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    img,
+    video {
         border: 1px solid white;
         border-radius: 1rem;
         overflow: hidden;
-        aspect-ratio: 4 / 3;
-        width: 15rem;
-        object-fit: cover;
+        aspect-ratio: 16 / 9;
+        width: 17rem;
+        object-fit: contain;
         margin: 1rem;
     }
 
@@ -81,10 +89,22 @@
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    margin: auto;
+
+    p:first-of-type {
+        color: var(--color-white);
+        font-weight: 500;
+    }
 
     p {
         font-weight: 400;
         max-width: 50ch;
+    }
+
+    .date {
+        color: rgb(193, 192, 192);
+        font-size: 0.875rem;
+        font-weight: 600;
     }
 
     .project-link {
