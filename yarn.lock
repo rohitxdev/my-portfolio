@@ -1368,10 +1368,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@remix-run/router@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.6.0.tgz#45010e1826f4d81a1b2cfaf874f1aac93998cd28"
-  integrity sha512-N13NRw3T2+6Xi9J//3CGLsK2OqC8NMme3d/YX+nh05K9YHWGcv8DycHJrqGScSP4T75o8IN6nqIMhVFU8ohg8w==
+"@remix-run/router@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.10.0.tgz#e2170dc2049b06e65bbe883adad0e8ddf8291278"
+  integrity sha512-Lm+fYpMfZoEucJ7cMxgt4dYt8jLfbpwRCzAjm9UgSLOkmlqo9gupxt6YX3DY0Fk155NT9l17d/ydi+964uS9Lw==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -3801,20 +3801,20 @@ react-loading-skeleton@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-loading-skeleton/-/react-loading-skeleton-3.3.0.tgz#c2470768308dc758d51586500a23a968d60ef13d"
   integrity sha512-+jwXoz7hA3kyNHzRyz/vjZx8lA/Vt91f6zB8gaygFZY8eLvbZyQiJC4ckYPWxqvfp2OiiwSs/fXTbZ7NyL3IrQ==
 
-react-router-dom@^6.10.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.11.0.tgz#e9507327dad2dfdd3c4815810dbd8de8fc2ee211"
-  integrity sha512-Q3mK1c/CYoF++J6ZINz7EZzwlgSOZK/kc7lxIA7PhtWhKju4KfF1WHqlx0kVCIFJAWztuYVpXZeljEbds8z4Og==
+react-router-dom@^6.17.0:
+  version "6.17.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.17.0.tgz#ea73f89186546c1cf72b10fcb7356d874321b2ad"
+  integrity sha512-qWHkkbXQX+6li0COUUPKAUkxjNNqPJuiBd27dVwQGDNsuFBdMbrS6UZ0CLYc4CsbdLYTckn4oB4tGDuPZpPhaQ==
   dependencies:
-    "@remix-run/router" "1.6.0"
-    react-router "6.11.0"
+    "@remix-run/router" "1.10.0"
+    react-router "6.17.0"
 
-react-router@6.11.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.11.0.tgz#2e9008e40f8ce69e381373a7916ebadfbf2ff184"
-  integrity sha512-hTm6KKNpj9SDG4syIWRjCU219O0RZY8RUPobCFt9p+PlF7nnkRgMoh2DieTKvw3F3Mw6zg565HGnSv8BuoY5oQ==
+react-router@6.17.0:
+  version "6.17.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.17.0.tgz#7b680c4cefbc425b57537eb9c73bedecbdc67c1e"
+  integrity sha512-YJR3OTJzi3zhqeJYADHANCGPUu9J+6fT5GLv82UWRGSxu6oJYCKVmxUcaBQuGm9udpWmPsvpme/CdHumqgsoaA==
   dependencies:
-    "@remix-run/router" "1.6.0"
+    "@remix-run/router" "1.10.0"
 
 react-side-effect@^2.1.0:
   version "2.1.2"
